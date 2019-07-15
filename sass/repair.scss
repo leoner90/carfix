@@ -1,0 +1,17 @@
+.repair-main-page-images-conainer{
+  border: 1px solid #ccc;
+  min-height: 100px;
+  padding: 12px;
+  @media screen and(max-width: 760px) {
+    min-height: 1px;
+    padding: 1px;
+  }
+}
+.repair-main-page-text-for-img {
+  text-align: center;
+  font-weight: 1px;
+  @media screen and(max-width: 760px) {
+    min-height: 1px;
+    padding: 1px;
+  }
+}

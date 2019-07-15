@@ -1,0 +1,61 @@
+.service-table {
+  background-image: url('../img/servicePage.jpg');
+  background-repeat: no-repeat;
+  height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center; 
+}
+.service-ul > li{
+  list-style: none;
+}
+.service-ul > li:before {
+  content:  "\2714     ";
+}
+h5 ,
+h6 ,
+.table-price {
+  font-weight: bold;
+  color:#ccc;
+}
+.service-total-price{
+  color:#ccc; 
+  padding: 5px;
+  background-color: rgba(0,0,0,0.45);
+  font-weight: bold;
+  text-align: center;
+  clip-path: polygon(28% 0, 100% 0, 72% 100%, 0% 100%);
+  border: 5px solid rgba(0,0,0,0.5);
+  @media screen and(max-width: 760px) {
+     border: 2px solid rgba(0,0,0,0.5);
+  }
+}
+.service-introduction-page-sections{
+  background-color: rgba( 0 , 0 , 0, 0.6);
+  cursor: pointer; 
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+.service-table > .service-introduction-page-sections:hover {
+  background-color: rgba( 0 , 0 , 0, 0.8);
+}
+.service-main-page-table-text {
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 20px;
+  @media screen and(max-width: 760px) {
+    line-height: normal;
+  }
+}
+.missed-info-text {
+  color: red;
+  text-align: center;
+  font-style: italic;
+  line-height: 16px;
+  @media screen and(max-width: 760px) {
+    line-height: normal;
+  }
+}

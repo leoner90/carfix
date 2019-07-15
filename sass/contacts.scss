@@ -1,0 +1,24 @@
+#google-map-iframe{
+   width:100%;
+   min-height: 250px;
+   @media screen and(max-width: 760px){
+    min-height: auto;
+  }
+}
+.contacts-phone-num{
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.contacts-opening-time-and-addres-container{
+  white-space: pre-wrap; 
+  display: block;
+}
+
+#google-map-container{
+  margin-top: 20px;
+  @media screen and(max-width: 760px){
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,55 @@
+/*//LEFT SIDEBAR + PSEUDO ELEMENT + SIDEBAR MENU*/
+#left-sidebar { 
+  padding: 50px  5px 0 5px !important;
+  min-height: 100vh;
+  padding-top:5%;
+  background-color: rgba(0, 0, 0, 0.49);
+  float: left;
+  margin-right: -0.2px;
+  @media screen and(max-width: 700px){
+    margin-right: 0;
+    padding: 3px !important;
+    margin-right: 3px;
+    border-right: 3px solid rgba(0,0,0,0.7);
+  }
+}
+#fake-left-sidebar {
+  width: 5%;
+  margin-left: -0.3px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.49);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  @media screen and(max-width: 760px){
+    display: none;
+  }
+}
+#side-menu a {  
+  color: #ccc;
+  clip-path: polygon(28% 0, 100% 0, 72% 100%, 0% 100%);
+  display:block;
+  background-color: rgba(0, 0, 0, 0.49);
+  text-align:center;
+  padding: 10px 25px ;
+  text-decoration:none;
+  border-radius:0 10px  10px 0;
+  font-weight:bold;
+  &:hover{
+    background-color:#000;
+    color:red;
+  }
+  @media screen and(max-width: 760px){
+    padding: 1px 5px ;
+  }
+}
+.button-img {
+  cursor:pointer;
+  margin-left: 10%;
+  width: 75%;
+  height: auto;
+}
+#left-sidebar-header{
+  text-align: center; 
+  color:#ccc; 
+  font-weight: bold;
+}
