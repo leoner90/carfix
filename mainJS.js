@@ -3,7 +3,7 @@ $(window).on('load', function () {
     $('#page-preloader').delay(750).fadeOut(750);
     scale_captcha();
 });
-function sendMail() {
+function sendMail(event) {
   event.preventDefault();
   $('#mail-preloader , #mail-preloader-spinner').show();
   $('.container-for-g-recaptcha').removeClass('errors')
@@ -15,7 +15,8 @@ function sendMail() {
     if (data == '') {
       $('.email').val(''); 
       $('.phoneNum').val('') ;  
-      $('.message').val('') ;    
+      $('.message').val('') ;   
+      grecaptcha.reset(); 
       $('#mail-preloader-spinner').css("-webkit-animation-play-state", "paused");
       $('#mail-preloader-spinner').css("background-image", "url('img/mail_sent.png')"); 
       setTimeout( function() {
@@ -60,7 +61,7 @@ function colapse_right_sidebar() {
   }
 }
 // Book MOT
-function bookMot() {
+function bookMot(event) {
   event.preventDefault();
   $('#mot-pop-up-preloader').show();
   var email = $('.mail').val(); 
@@ -69,7 +70,6 @@ function bookMot() {
   var month = $('.month').val();
   var date = $('.date').val();
   var time = $('.time').val();
-
   $.post("pages/mot/bookMotphp.php",{email:email, phoneNum:phoneNum, regNumber:regNumber, month:month, date:date, time:time},function(data){ 
     if (data == '') {
       $('.user-data , .date , .time').hide(''); 
@@ -91,6 +91,9 @@ function bookMot() {
       }
       if (result.includes("regNum")) {
         $('.regNumber').addClass('errors');
+      }
+      if (result.includes("ERROR TRY AGAIN")) {
+        alert('ERROR TRY AGAIN');
       }
       $('#mot-pop-up-preloader').delay(750).fadeOut(500);
     }         

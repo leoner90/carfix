@@ -64,9 +64,9 @@
         <input class="form-control  phoneNum right-sidebar-inputs"  type="number" placeholder="Your phone number " onfocus="$(this).removeClass('errors')">
         <textarea  id="right-sidebar-text-area" class="form-control  message"  placeholder="Write something.." onfocus="$(this).removeClass('errors')" ></textarea>
         <div class="container-for-g-recaptcha" >
-           <div data-theme="dark" id="captchaHeightAfterScale" data-size="compact " class="g-recaptcha" data-sitekey="6Le8oa0UAAAAAPn4D1rbWYBv_-buG3K8COnW7GOl"></div> 
+           <div data-theme="dark" id="captchaHeightAfterScale" data-size="compact " class="g-recaptcha" data-sitekey="6LcApK0UAAAAAKRpiva-19tK780nQng25vWZ1GKT"></div> 
         </div>
-        <button id="send-mail-btn" class="btn  btn-primary" onclick="sendMail();"> SUBMIT </button>
+        <button id="send-mail-btn" class="btn  btn-primary" onclick="sendMail(event);"> SUBMIT </button>
       </form>
     </div>
   </div>
