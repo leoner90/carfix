@@ -1,16 +1,16 @@
-<?php
-$msg = htmlspecialchars($_POST['message']);
-$phone = htmlspecialchars($_POST['phoneNum']);
-$email = htmlspecialchars($_POST['email']);
+<?php session_start(); 
 // GOOGLE CAPTCHA
-$secret= '6Le8oa0UAAAAABbaDPvAb8_uUbjjz-Vq0QNJkrKo';
+$secret= '6LcApK0UAAAAAGF_HgI_2wyFh0wF_1I545M7Ykdk';
 $response = $_POST['captcha'];
 $verify=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
 $captcha_success=json_decode($verify);
 // CAPTCHA ERROR CHECK
-if ($captcha_success->success==false) {
+if ($captcha_success->success==false)  {
 	$errors[] = 'captcha-Err';
 }
+$msg = htmlspecialchars($_POST['message']);
+$phone = htmlspecialchars($_POST['phoneNum']);
+$email = htmlspecialchars($_POST['email']);
 //CHECKS
 if  (trim($msg) == ''){
 	$errors[] = 'msg';
