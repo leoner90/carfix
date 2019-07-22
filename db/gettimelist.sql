@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Jul 15, 2019 at 02:46 AM
+-- Generation Time: Jul 22, 2019 at 03:41 AM
 -- Server version: 5.6.38
 -- PHP Version: 5.5.38
 
@@ -25,19 +25,114 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `april`
+-- Table structure for table `April`
 --
 
-CREATE TABLE `april` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `April` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `april`
+-- Dumping data for table `April`
 --
 
-INSERT INTO `april` (`date`, `time`) VALUES
+INSERT INTO `April` (`motDate`, `motTime`) VALUES
+(1, ''),
+(2, ''),
+(3, ''),
+(4, ''),
+(5, ''),
+(6, ''),
+(7, ''),
+(8, ''),
+(9, ''),
+(10, ''),
+(11, ''),
+(12, ''),
+(13, ''),
+(14, ''),
+(15, ''),
+(16, ''),
+(17, ''),
+(18, ''),
+(19, ''),
+(20, ''),
+(21, ''),
+(22, ''),
+(23, ''),
+(24, ''),
+(25, ''),
+(26, ''),
+(27, ''),
+(28, ''),
+(29, ''),
+(30, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `August`
+--
+
+CREATE TABLE `August` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `August`
+--
+
+INSERT INTO `August` (`motDate`, `motTime`) VALUES
+(1, '8.2019/9.2019/10.2019/'),
+(2, ''),
+(3, ''),
+(4, ''),
+(5, ''),
+(6, ''),
+(7, ''),
+(8, ''),
+(9, ''),
+(10, ''),
+(11, ''),
+(12, ''),
+(13, ''),
+(14, ''),
+(15, ''),
+(16, ''),
+(17, ''),
+(18, ''),
+(19, ''),
+(20, ''),
+(21, ''),
+(22, ''),
+(23, ''),
+(24, ''),
+(25, ''),
+(26, ''),
+(27, '17.2019/'),
+(28, ''),
+(29, ''),
+(30, ''),
+(31, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `December`
+--
+
+CREATE TABLE `December` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `December`
+--
+
+INSERT INTO `December` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -73,67 +168,19 @@ INSERT INTO `april` (`date`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `august`
+-- Table structure for table `February`
 --
 
-CREATE TABLE `august` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `February` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `august`
+-- Dumping data for table `February`
 --
 
-INSERT INTO `august` (`date`, `time`) VALUES
-(1, ''),
-(2, ''),
-(3, ''),
-(4, ''),
-(5, '/9/12/15'),
-(6, '/10/15/13'),
-(7, '/10'),
-(8, '/12/15'),
-(9, '/11'),
-(10, ''),
-(11, ''),
-(12, ''),
-(13, '/11'),
-(14, '/12'),
-(15, ''),
-(16, ''),
-(17, ''),
-(18, ''),
-(19, ''),
-(20, ''),
-(21, ''),
-(22, '/11'),
-(23, '/14'),
-(24, ''),
-(25, ''),
-(26, ''),
-(27, ''),
-(28, '/17'),
-(29, ''),
-(30, ''),
-(31, '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `december`
---
-
-CREATE TABLE `december` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `december`
---
-
-INSERT INTO `december` (`date`, `time`) VALUES
+INSERT INTO `February` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -160,54 +207,6 @@ INSERT INTO `december` (`date`, `time`) VALUES
 (24, ''),
 (25, ''),
 (26, ''),
-(27, ''),
-(28, ''),
-(29, ''),
-(30, ''),
-(31, '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `february`
---
-
-CREATE TABLE `february` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `february`
---
-
-INSERT INTO `february` (`date`, `time`) VALUES
-(1, ''),
-(2, ''),
-(3, ''),
-(4, ''),
-(5, ''),
-(6, ''),
-(7, ''),
-(8, ''),
-(9, ''),
-(10, ''),
-(11, ''),
-(12, ''),
-(13, ''),
-(14, ''),
-(15, ''),
-(16, ''),
-(17, ''),
-(18, ''),
-(19, ''),
-(20, ''),
-(21, ''),
-(22, ''),
-(23, ''),
-(24, ''),
-(25, ''),
-(26, '/10/8/9/11'),
 (27, ''),
 (28, ''),
 (29, '');
@@ -215,19 +214,19 @@ INSERT INTO `february` (`date`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `january`
+-- Table structure for table `January`
 --
 
-CREATE TABLE `january` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `January` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `january`
+-- Dumping data for table `January`
 --
 
-INSERT INTO `january` (`date`, `time`) VALUES
+INSERT INTO `January` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -263,67 +262,19 @@ INSERT INTO `january` (`date`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `julay`
+-- Table structure for table `July`
 --
 
-CREATE TABLE `julay` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `July` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `julay`
+-- Dumping data for table `July`
 --
 
-INSERT INTO `julay` (`date`, `time`) VALUES
-(1, ''),
-(2, ''),
-(3, ''),
-(4, ''),
-(5, ''),
-(6, ''),
-(7, ''),
-(8, ''),
-(9, ''),
-(10, ''),
-(11, '/11/8/12/9/16/17'),
-(12, '/8/11/12/13/10/14/17/9/15/16'),
-(13, ''),
-(14, ''),
-(15, '/11/9/10/8/12/15/14'),
-(16, '/13/11/9/8/12/17/14/16/15/10'),
-(17, '/8/9/12/11/17/13'),
-(18, '/10/14/11'),
-(19, '/8'),
-(20, ''),
-(21, ''),
-(22, '/13/10'),
-(23, ''),
-(24, '/9/11/12'),
-(25, '/13/11'),
-(26, ''),
-(27, ''),
-(28, ''),
-(29, ''),
-(30, ''),
-(31, '');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `june`
---
-
-CREATE TABLE `june` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `june`
---
-
-INSERT INTO `june` (`date`, `time`) VALUES
+INSERT INTO `July` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -340,38 +291,38 @@ INSERT INTO `june` (`date`, `time`) VALUES
 (14, ''),
 (15, ''),
 (16, ''),
-(17, '/9'),
+(17, ''),
 (18, ''),
 (19, ''),
 (20, ''),
 (21, ''),
-(22, ''),
-(23, ''),
+(22, '8.2019/17.2019/'),
+(23, '8.2019/'),
 (24, ''),
 (25, ''),
 (26, ''),
 (27, ''),
 (28, ''),
-(29, ''),
+(29, '13.2019/'),
 (30, ''),
-(31, '');
+(31, '17.2019/16.2019/15.2019/');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `march`
+-- Table structure for table `June`
 --
 
-CREATE TABLE `march` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `June` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `march`
+-- Dumping data for table `June`
 --
 
-INSERT INTO `march` (`date`, `time`) VALUES
+INSERT INTO `June` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -401,25 +352,24 @@ INSERT INTO `march` (`date`, `time`) VALUES
 (27, ''),
 (28, ''),
 (29, ''),
-(30, '/17'),
-(31, '');
+(30, '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `may`
+-- Table structure for table `March`
 --
 
-CREATE TABLE `may` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `March` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `may`
+-- Dumping data for table `March`
 --
 
-INSERT INTO `may` (`date`, `time`) VALUES
+INSERT INTO `March` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -455,19 +405,19 @@ INSERT INTO `may` (`date`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `november`
+-- Table structure for table `May`
 --
 
-CREATE TABLE `november` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `May` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `november`
+-- Dumping data for table `May`
 --
 
-INSERT INTO `november` (`date`, `time`) VALUES
+INSERT INTO `May` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -503,19 +453,66 @@ INSERT INTO `november` (`date`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `october`
+-- Table structure for table `November`
 --
 
-CREATE TABLE `october` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `November` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `october`
+-- Dumping data for table `November`
 --
 
-INSERT INTO `october` (`date`, `time`) VALUES
+INSERT INTO `November` (`motDate`, `motTime`) VALUES
+(1, ''),
+(2, ''),
+(3, ''),
+(4, ''),
+(5, ''),
+(6, ''),
+(7, ''),
+(8, ''),
+(9, ''),
+(10, ''),
+(11, ''),
+(12, ''),
+(13, ''),
+(14, ''),
+(15, ''),
+(16, ''),
+(17, ''),
+(18, ''),
+(19, ''),
+(20, ''),
+(21, ''),
+(22, ''),
+(23, ''),
+(24, ''),
+(25, ''),
+(26, ''),
+(27, ''),
+(28, ''),
+(29, ''),
+(30, '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `October`
+--
+
+CREATE TABLE `October` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `October`
+--
+
+INSERT INTO `October` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -551,19 +548,19 @@ INSERT INTO `october` (`date`, `time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `september`
+-- Table structure for table `September`
 --
 
-CREATE TABLE `september` (
-  `date` int(11) NOT NULL,
-  `time` varchar(2000) NOT NULL
+CREATE TABLE `September` (
+  `motDate` int(11) NOT NULL,
+  `motTime` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `september`
+-- Dumping data for table `September`
 --
 
-INSERT INTO `september` (`date`, `time`) VALUES
+INSERT INTO `September` (`motDate`, `motTime`) VALUES
 (1, ''),
 (2, ''),
 (3, ''),
@@ -593,160 +590,159 @@ INSERT INTO `september` (`date`, `time`) VALUES
 (27, ''),
 (28, ''),
 (29, ''),
-(30, ''),
-(31, '');
+(30, '');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `april`
+-- Indexes for table `April`
 --
-ALTER TABLE `april`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `April`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `august`
+-- Indexes for table `August`
 --
-ALTER TABLE `august`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `August`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `december`
+-- Indexes for table `December`
 --
-ALTER TABLE `december`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `December`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `february`
+-- Indexes for table `February`
 --
-ALTER TABLE `february`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `February`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `january`
+-- Indexes for table `January`
 --
-ALTER TABLE `january`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `January`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `julay`
+-- Indexes for table `July`
 --
-ALTER TABLE `julay`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `July`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `june`
+-- Indexes for table `June`
 --
-ALTER TABLE `june`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `June`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `march`
+-- Indexes for table `March`
 --
-ALTER TABLE `march`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `March`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `may`
+-- Indexes for table `May`
 --
-ALTER TABLE `may`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `May`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `november`
+-- Indexes for table `November`
 --
-ALTER TABLE `november`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `November`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `october`
+-- Indexes for table `October`
 --
-ALTER TABLE `october`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `October`
+  ADD PRIMARY KEY (`motDate`);
 
 --
--- Indexes for table `september`
+-- Indexes for table `September`
 --
-ALTER TABLE `september`
-  ADD PRIMARY KEY (`date`);
+ALTER TABLE `September`
+  ADD PRIMARY KEY (`motDate`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `april`
+-- AUTO_INCREMENT for table `April`
 --
-ALTER TABLE `april`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `April`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `august`
+-- AUTO_INCREMENT for table `August`
 --
-ALTER TABLE `august`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `August`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `december`
+-- AUTO_INCREMENT for table `December`
 --
-ALTER TABLE `december`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `December`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `february`
+-- AUTO_INCREMENT for table `February`
 --
-ALTER TABLE `february`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+ALTER TABLE `February`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT for table `january`
+-- AUTO_INCREMENT for table `January`
 --
-ALTER TABLE `january`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `January`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `julay`
+-- AUTO_INCREMENT for table `July`
 --
-ALTER TABLE `julay`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `July`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `june`
+-- AUTO_INCREMENT for table `June`
 --
-ALTER TABLE `june`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `June`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `march`
+-- AUTO_INCREMENT for table `March`
 --
-ALTER TABLE `march`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `March`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `may`
+-- AUTO_INCREMENT for table `May`
 --
-ALTER TABLE `may`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `May`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `november`
+-- AUTO_INCREMENT for table `November`
 --
-ALTER TABLE `november`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `November`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
--- AUTO_INCREMENT for table `october`
+-- AUTO_INCREMENT for table `October`
 --
-ALTER TABLE `october`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `October`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT for table `september`
+-- AUTO_INCREMENT for table `September`
 --
-ALTER TABLE `september`
-  MODIFY `date` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+ALTER TABLE `September`
+  MODIFY `motDate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
